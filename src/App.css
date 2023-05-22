@@ -1,0 +1,116 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.App-header {
+    overflow: visible;
+    text-align: center;
+    background-color: #45b8ac;
+    color: white;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+}
+
+.Messages-list {
+    padding: 20px 0;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    list-style: none;
+    padding-left: 0;
+    flex-grow: 1;
+    overflow: auto;
+    margin-bottom: 10px;
+    background-color: #ecf7f6;
+}
+
+.Messages-message {
+    display: flex;
+    margin-top: 10px;
+}
+
+.Messages-message.currentMember {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.Message-content {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.currentMember > .Message-content {
+    align-items: flex-end;
+    margin-right: 15px;
+}
+
+.Message-content > .username {
+    display: block;
+    color: gray;
+    font-size: 14px;
+    padding-bottom: 4px;
+}
+
+.Message-content > .text {
+    padding: 10px 18px;
+    max-width: 400px;
+    margin: 0;
+    background-color: #45b8ac;
+    color: #fff;
+    display: inline-block;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.currentMember > .Message-content .text {
+    background-color: lightgray;
+    color: black;
+    font-weight: 400;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto 40px;
+}
+
+input {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #a9a9a9;
+    flex-grow: 1;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input:focus {
+    border-bottom: 2px solid #45b8ac;
+}
+
+button {
+    padding: 5px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #45b8ac;
+    color: white;
+    border: none;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    outline: none;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+button:hover {
+    border-bottom: 2px solid #45b8ac;
+    color: #45b8ac;
+    background: #fff;
+}
